@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontfamily: {
+                poppins: ["'Poppins'", "sans-serif"],
+              },
+
+              keyframes: {
+                wiggle: {
+                '0%': {
+                    transform: 'translateX(-100px)',
+                    opacity: '0',
+                },
+                '100%': {
+                    transform: 'translateX(0)',
+                    opacity: '1',
+                },
+                },
+
+                slideRight: {
+                '0%': {
+                    transform: 'translateX(100px)',
+                    opacity: '0',
+                },
+                '100%': {
+                    transform: 'translateX(0)',
+                    opacity: '1',
+                },
+                },
+                
+                slideBottom: {
+                '0%': {
+                    transform: 'translateY(-100px)',
+                    opacity: '0',
+                },
+                '100%': {
+                    transform: 'translateY(0)',
+                    opacity: '1',
+                },
+                },
+                                
+                zoomIn: {
+                    '0%': {
+                    transform: 'scale(0)',
+                    opacity: '0',
+                },
+                '100%': {
+                    transform: 'scale(1)',
+                    opacity: '1',
+                },
+                },
+                                
+                float: {
+                    '0%': {
+                    transform: 'translateY(0)',
+                },
+
+                    '25%': {
+                    transform: 'translateY(-24px)',
+                },
+
+                '100%': {
+                    transform: 'translateY(0)',
+                },
+                },
+            },
+            animation: {
+                wiggle: 'wiggle 1s ease-in-out',
+                slideBottom: 'slideBottom 1s ease-in-out',
+                slideRight: 'slideRight 1s ease-in-out',
+                'zoomIn-float': 'zoomIn 1s ease-in-out forwards, float 4s ease-in-out infinite'
+            },
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#1f242d] text-white">
+    <header class="container mx-auto fixed top-0 left-0 w-full py-[20px] px-[10%] bg-transparent flex justify-between item-center z-100">
+
+        <a href="#" class="text-3xl font-bold opacity-0 animate-[wiggle_1s_ease-in-out_forwards]">Portfolio.</a>
+        <nav>
+            <ul class="md:flex">
+                <li><a class="text-white text-[#0ef] text-[1.4rem] mr-8 cursor-pointer capitalize" href="#">home</a></li>
+
+                <li><a<a class="text-white text-[1.4rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">about</a></li>
+
+                <li><a<a class="text-white text-[1.4rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">skill</a></li>
+
+                <li><a<a class="text-white text-[1.4rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">portfolio</a></li>
+
+                <li><a<a class="text-white text-[1.4rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="md:flex justify-between gap-24 relative w-full h-full pt-[280px] pb-0 px-[10%] ">
+            <!-- home-content -->
+            <div class="md:w-[60%]">
+                <div>
+                    <h2 class="capitalize text-3xl font-bold mb-4 animate-[slideBottom_.7s_ease-in-out_forwards]">hello, its me</h2>
+                    <h1 class="block text-7xl font-bold mb-4 capitalize animate-[wiggle_1.2s_ease-in-out_forwards]">sakib hasan</h1>
+                    <h2 class="text-3xl font-bold mb-8 animate-[slideBottom_.7s_ease-in-out_forwards]">And i'm a 
+                        <span class="text-[#0ef] capitalize dynamic-text"></span>
+                    </h2>
+
+                    <p class="text-lg mb-6 animate-[slideRight_1.2s_ease-in-out_forwards]">
+                        Your go-to frontend developer, dedicated to creating engaging, performant websites that not only look great but also deliver seamless user experiences."
+                    </p>
+                </div>
+                <ul class="flex mb-8">
+                    <li class="w-[40px] flex items-center mr-6 justify-center p-6 h-[40px] rounded-full border-[#0ef] border-2">
+                        <a href="#"><i class="fa-brands fa-facebook-f text-2xl text-[#0ef]"></i></a>
+                    </li>
+
+                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
+                        <a href="#"><i class="fa-brands fa-twitter text-2xl text-[#0ef]"></i></a>
+                    </li>
+
+                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
+                        <a href="#"><i class="fa-brands fa-square-instagram text-[#0ef] text-2xl"></i></a>
+                    </li>
+
+                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
+                        <a href="#"><i class="fa-brands fa-linkedin-in text-2xl text-[#0ef]"></i></a>
+                    </li>
+                </ul>
+                <!-- buttons -->
+                 <div class="flex gap-8">
+                    <button class="inline-block py-4 px-12 bg-[#0ef] shadow-md text-[#1f242d] font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
+                        <a class="capitalize text-lg" href="#">about me</a>
+                    </button>
+
+                    <button class="inline-block py-4 px-12 bg-[#0ef] shadow-md text-[#1f242d] font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
+                        <a class="capitalize text-lg" href="#">hair me</a></button>
+                 </div>
+            </div>
+            <!-- home image -->
+             <div class=" md:w-[40%] ">
+                <div class="w-[350px] rounded-full shadow-[#0ef] shadow-xl bg-[#0ef] opacity-0 delay-700 animate-zoomIn-float">
+                    <img src="image/Untitled_design__2_-removebg-preview.png" alt="">
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <!-- typed js cdn -->
+    <script 
+    src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
