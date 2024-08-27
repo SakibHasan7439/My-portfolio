@@ -56,6 +56,17 @@
                     opacity: '1',
                 },
                 },
+
+                slideTop: {
+                '0%': {
+                    transform: 'translateY(100px)',
+                    opacity: '0',
+                },
+                '100%': {
+                    transform: 'translateY(0)',
+                    opacity: '1',
+                },
+                },
                                 
                 zoomIn: {
                     '0%': {
@@ -115,7 +126,7 @@
                 </li>
 
                 <li>
-                    <a class="text-white text-[1.1rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">skills</a>
+                    <a class="text-white text-[1.1rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#skills">skills</a>
                 </li>
 
                 <li>
@@ -131,12 +142,12 @@
 
     <main class="container mx-auto">
         <!-- home section -->
-        <section id="home-section" class="md:flex justify-between gap-24 relative w-full h-full pt-[200px] pb-0 px-[10%] mb-[20rem]">
+        <section id="home-section" class="md:flex justify-between gap-24 relative w-full h-full pt-[200px] pb-0 px-[10%] mb-[16rem]">
             <!-- home-content -->
             <div class="md:w-[65%]">
                 <div>
-                    <h2 class="capitalize text-3xl font-bold mb-6 animate-[slideBottom_.7s_ease-in-out_forwards]">hello,
-                        <span class="text-[#0ef]">sakib hasan</span>
+                    <h2 class="text-3xl font-bold mb-6 animate-[slideBottom_.7s_ease-in-out_forwards]">Hello, its
+                        <span class="text-[#0ef] capitalize">sakib hasan</span>
                     </h2>
 
                     <h2 class="text-3xl font-bold mb-6 animate-[slideBottom_.7s_ease-in-out_forwards]">And i'm a</h2>
@@ -147,30 +158,38 @@
                     </p>
                 </div>
                 <ul class="flex mb-6">
-                    <li class="w-[40px] flex items-center mr-6 justify-center p-6 h-[40px] rounded-full border-[#0ef] border-2">
-                        <a href="#"><i class="fa-brands fa-facebook-f text-2xl text-[#0ef]"></i></a>
+                    <li class="relative mr-6 overflow-hidden border-2 border-[#0ef] rounded-full transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100">
+                        <a href="#" class="relative z-10 flex items-center justify-center p-6 text-2xl w-[40px] h-[40px] font-semibold text-[#0ef] hover:text-black">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                     </li>
 
-                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
-                        <a href="#"><i class="fa-brands fa-twitter text-2xl text-[#0ef]"></i></a>
+                    <li class="relative mr-6 overflow-hidden border-2 border-[#0ef] rounded-full transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100">
+                        <a href="#" class="relative z-10 flex items-center justify-center p-6 text-2xl w-[40px] h-[40px] font-semibold text-[#0ef] hover:text-black">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </li>
 
-                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
-                        <a href="#"><i class="fa-brands fa-square-instagram text-[#0ef] text-2xl"></i></a>
+                    <li class="relative mr-6 overflow-hidden border-2 border-[#0ef] rounded-full transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100">
+                        <a href="#" class="relative z-10 flex items-center justify-center p-6 text-2xl w-[40px] h-[40px] font-semibold text-[#0ef] hover:text-black">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
                     </li>
 
-                    <li class="w-[40px] flex items-center mr-6 justify-center p-6  h-[40px] rounded-full border-[#0ef] border-2">
-                        <a href="#"><i class="fa-brands fa-linkedin-in text-2xl text-[#0ef]"></i></a>
+                    <li class="relative mr-6 overflow-hidden border-2 border-[#0ef] rounded-full transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100">
+                        <a href="#" class="relative z-10 flex items-center justify-center p-6 text-2xl w-[40px] h-[40px] font-semibold text-[#0ef] hover:text-black">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
                     </li>
                 </ul>
                 <!-- buttons -->
                  <div class="flex gap-8">
-                    <button class="inline-block py-4 px-12 bg-[#0ef] shadow-md text-[#1f242d] font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
+                    <button class="inline-flex justify-center whitespace-nowrap rounded-lg px-12 py-4 text-sm font-medium text-black dark:text-slate-800 bg-[#0ef] dark:from-slate-200 dark:to-slate-100 dark:hover:bg-slate-100 shadow focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms] animate-[slideBottom_.7s_ease-in-out_forwards]">
                         <a class="capitalize text-lg" href="#">download CV</a>
                     </button>
 
-                    <button class="inline-block py-4 px-12 bg-transparent hover:bg-[#0ef] shadow-md hover:text-[#1f242d] transition duration-300 font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
-                        <a class="capitalize text-lg" href="#">hair me</a>
+                    <button class="relative overflow-hidden font-semibold py-4 px-12 text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-black before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 animate-[slideBottom_.7s_ease-in-out_forwards]">
+                        <a class="capitalize relative z-10 text-lg" href="#">hair me</a>
                     </button>
                  </div>
             </div>
@@ -183,7 +202,7 @@
         </section>
 
         <!-- about-us section -->
-         <section id="about-us" class=" mb-[20rem]">
+         <section id="about-us" class=" mb-[16rem]">
             <!-- about us container -->
             <div class="px-[10%] grid grid-cols-3 gap-24 items-center">
 
@@ -198,7 +217,7 @@
                  <h3 class="text-center text-3xl capitalize font-semibold mb-6 text-[#0ef]">about us</h3>
                  <div class="text-[1.1rem] tracking-widest">
                      <p class="mb-6">
-                         Hello! I’m Sakib Hasan, a passionate <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">frontend web developer</span> with a keen eye for design and detail. Currently, I’m a university student, where I’m honing my skills in <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">web development</span>. I have a strong foundation in <span class="text-[#E34F26] font-semibold">HTML</span>, <span class="text-[#1572B6] font-semibold">CSS</span>, and <span class="text-[#F7DF1E] font-semibold">JavaScript</span>, with hands-on experience using CSS libraries like <span class="text-[#38BDF8] font-semibold">Tailwind</span> and <span class="text-[#563D7C] font-semibold">Bootstrap</span> and component library like <span class="text-[#1D4ED8] font-semibold">DaisyUI</span> to create responsive and visually appealing websites.
+                         Hello! I’m Sakib Hasan, a passionate <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">frontend web developer</span>. Currently, I’m a university student, where I’m honing my skills in <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">web development</span>. I have a strong foundation in <span class="text-[#E34F26] font-semibold">HTML</span>, <span class="text-[#1572B6] font-semibold">CSS</span>, and <span class="text-[#F7DF1E] font-semibold">JavaScript</span>, with hands-on experience using CSS libraries like <span class="text-[#38BDF8] font-semibold">Tailwind</span> and <span class="text-[#563D7C] font-semibold">Bootstrap</span> and component library like <span class="text-[#1D4ED8] font-semibold">DaisyUI</span> to create responsive and visually appealing websites.
                      </p>
  
                      <p class="mb-6">
@@ -218,12 +237,81 @@
             </div>
 
 
-            <div class=" text-center">
-                <button class="inline-block py-4 px-12 hover:bg-[#03becc] bg-[#0ef] shadow-md text-[#1f242d] transition duration-300 font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
-                    <a class="capitalize text-lg" href="#">contact me</a>
+            <div class=" text-center ml-[28%]">
+                <button class="relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-black before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 animate-[slideBottom_.7s_ease-in-out_forwards]">
+                    <a class="capitalize text-lg relative z-10" href="#">contact me</a>
                 </button>
             </div>
          </section>
+
+         <!-- skills & technology section -->
+          <section id="skills" class="mb-[16rem]">
+            <div class="px-[10%]">
+                 <div class="mb-6">
+                    <h4 class="text-center h-[50px] text-3xl capitalize font-semibold  text-[#0ef] hover:border-b-2 pb-2 hover:border-[#0ef] w-[400px] mx-auto">
+                        skills and technologies
+                    </h4>
+                 </div>
+
+                <!-- skill-cards-container -->
+                 <div class="md:grid grid-cols-3 gap-8">
+                    <!-- col-1 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#dc2626] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group opacity-0 animate-[wiggle_1s_ease-in-out_forwards]">
+                        <i class="fa-brands fa-html5 text-7xl text-red-600 group-hover:text-white mb-3 relative z-10"></i>
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">html5</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            Proficient in crafting semantic and well-structured HTML5 code to build accessible, user-friendly web pages. Experienced in creating layouts with a focus on clean, maintainable markup, adhering to best practices for web development
+                        </p>
+                    </div>
+
+                    <!-- col-2 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md  relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#1572b6] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group animate-[slideBottom_1s_ease-in-out_forwards]">
+                        <i class="fa-brands fa-css3 text-7xl group-hover:text-white text-[#1572b6] mb-3 relative z-10"></i>
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">css3</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            Experienced in designing responsive and visually appealing websites using CSS3. Proficient in leveraging advanced CSS features like Flexbox, Grid, and animations to create dynamic layouts. Skilled in optimizing styles for cross-browser compatibility and performance
+                        </p>
+                    </div>
+
+                    <!-- col-3 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-black before:h-full before:bg-[#f7df1e] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group animate-[slideRight_1s_ease-in-out_forwards]">
+                        <i class="fa-brands fa-js text-7xl group-hover:text-black text-[#f7df1e] mb-3 relative z-10"></i>
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">JavaScript</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            Proficient in JavaScript, with a strong foundation in writing clean, efficient code for dynamic web applications. Experienced in DOM manipulation, event handling, and integrating APIs to create interactive user experiences.
+                        </p>
+                    </div>
+
+                    <!-- col-4 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-black before:h-full before:bg-[#0ef] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 opacity-0 animate-[wiggle_1.3s_ease-in-out_forwards]">
+                        <img class="w-[6rem] mb-5 relative z-10" src="image/tailwind.png" alt="tailwind image">
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">tailwind</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            Proficient in crafting semantic and well-structured HTML5 code to build accessible, user-friendly web pages. Experienced in creating layouts with a focus on clean, maintainable markup, adhering to best practices for web development
+                        </p>
+                    </div>
+
+                    <!-- col-5 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#7952b3] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group animate-[slideTop_1s_ease-in-out_forwards]">
+                        <i class="fa-brands fa-bootstrap group-hover:text-white text-7xl text-[#7952b3] mb-3 relative z-10"></i>
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">Bootstrap</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            Skilled in utilizing Bootstrap to rapidly build responsive, mobile-first web applications. Proficient in leveraging Bootstrap’s grid system, components, and utilities to create cohesive and adaptive layouts with minimal custom CSS
+                        </p>
+                    </div>
+
+                    <!-- col-6 -->
+                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#1ad1a5] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 animate-[slideRight_1.3s_ease-in-out_forwards]">
+                        <img class="w-[4.6rem] mb-2 relative z-10" src="image/daisyUI.png" alt="">
+                        <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">daisyUi</h3>
+                        <p class="text-[1.1rem] relative z-10">
+                            strong command of DaisyUI, a powerful UI component library built on Tailwind CSS. With DaisyUI, I efficiently create responsive, accessible, and visually appealing interfaces. Leveraging its pre-built components and custom themes
+                        </p>
+                    </div>
+                 </div>
+            </div>
+          </section>
+
     </main>
 
     <!-- typed js cdn -->
