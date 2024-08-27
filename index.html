@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="shortcut icon" href="image/portfolio logo.png" type="image/x-icon">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,12 +81,19 @@
                     transform: 'translateY(0)',
                 },
                 },
+
+                slideInLeft: {
+                '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+
             },
             animation: {
                 wiggle: 'wiggle 1s ease-in-out',
                 slideBottom: 'slideBottom 1s ease-in-out',
                 slideRight: 'slideRight 1s ease-in-out',
-                'zoomIn-float': 'zoomIn 1s ease-in-out forwards, float 4s ease-in-out infinite'
+                'zoomIn-float': 'zoomIn 1s ease-in-out forwards, float 4s ease-in-out infinite',
+                slideInLeft: 'slideInLeft 1s ease-out forwards',
             },
             }
           }
@@ -100,10 +108,10 @@
         <a href="#" class="text-3xl font-bold opacity-0 animate-[wiggle_1s_ease-in-out_forwards]">Portfolio.</a>
         <nav>
             <ul class="md:flex">
-                <li><a class="text-white text-[#0ef] font-semibold text-[1.1rem] mr-8 cursor-pointer capitalize" href="#">home</a></li>
+                <li><a class="text-white text-[#0ef] font-semibold text-[1.1rem] mr-8 cursor-pointer capitalize" href="#home-section">home</a></li>
 
                 <li class="cursor-pointer">
-                    <a class=" text-white text-[1.1rem] mr-8 capitalize hover:text-[#0ef]" href="#">about us</a>
+                    <a class=" text-white text-[1.1rem] mr-8 capitalize hover:text-[#0ef]" href="#about-us">about us</a>
                 </li>
 
                 <li>
@@ -122,7 +130,8 @@
     </header>
 
     <main class="container mx-auto">
-        <section class="md:flex justify-between gap-24 relative w-full h-full pt-[200px] pb-0 px-[10%]">
+        <!-- home section -->
+        <section id="home-section" class="md:flex justify-between gap-24 relative w-full h-full pt-[200px] pb-0 px-[10%] mb-[20rem]">
             <!-- home-content -->
             <div class="md:w-[65%]">
                 <div>
@@ -133,7 +142,7 @@
                     <h2 class="text-3xl font-bold mb-6 animate-[slideBottom_.7s_ease-in-out_forwards]">And i'm a</h2>
                     <span class="text-[#0ef] text-6xl font-bold capitalize dynamic-text animate-[slideBottom_.7s_ease-in-out_forwards]"></span>
 
-                    <p class="text-lg mb-6 mt-6 animate-[slideRight_1.2s_ease-in-out_forwards]">
+                    <p class="text-[1.1rem] mb-6 mt-6 animate-[slideRight_1.2s_ease-in-out_forwards]">
                         Your go-to frontend developer, dedicated to creating engaging, performant websites that not only look great but also deliver seamless user experiences."
                     </p>
                 </div>
@@ -161,7 +170,8 @@
                     </button>
 
                     <button class="inline-block py-4 px-12 bg-transparent hover:bg-[#0ef] shadow-md hover:text-[#1f242d] transition duration-300 font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
-                        <a class="capitalize text-lg" href="#">hair me</a></button>
+                        <a class="capitalize text-lg" href="#">hair me</a>
+                    </button>
                  </div>
             </div>
             <!-- home image -->
@@ -171,6 +181,49 @@
                 </div>
              </div>
         </section>
+
+        <!-- about-us section -->
+         <section id="about-us" class=" mb-[20rem]">
+            <!-- about us container -->
+            <div class="px-[10%] grid grid-cols-3 gap-24 items-center">
+
+            <!-- left-side -->
+             <div class="relative h-[400px] border-4 px-4 pt-4 pb-0 border-[#0ef] rounded-md  opacity-0 animate-slideInLeft">
+                <!-- need to add an Image -->
+                 <img class="h-[374px] w-[300px] rounded-md" src="image/man-5583035_1280-removebg-preview.png" alt="">
+             </div>
+ 
+             <!-- right-side -->
+             <div class="col-span-2 animate-[slideRight_1.2s_ease-in-out_forwards] mb-6">
+                 <h3 class="text-center text-3xl capitalize font-semibold mb-6 text-[#0ef]">about us</h3>
+                 <div class="text-[1.1rem] tracking-widest">
+                     <p class="mb-6">
+                         Hello! I’m Sakib Hasan, a passionate <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">frontend web developer</span> with a keen eye for design and detail. Currently, I’m a university student, where I’m honing my skills in <span class="text-[#0ef] font-semibold hover:border-b-2 hover:border-[#0ef]">web development</span>. I have a strong foundation in <span class="text-[#E34F26] font-semibold">HTML</span>, <span class="text-[#1572B6] font-semibold">CSS</span>, and <span class="text-[#F7DF1E] font-semibold">JavaScript</span>, with hands-on experience using CSS libraries like <span class="text-[#38BDF8] font-semibold">Tailwind</span> and <span class="text-[#563D7C] font-semibold">Bootstrap</span> and component library like <span class="text-[#1D4ED8] font-semibold">DaisyUI</span> to create responsive and visually appealing websites.
+                     </p>
+ 
+                     <p class="mb-6">
+                         Over the past year, I’ve worked on various projects, from dynamic web applications to portfolio websites, each time striving to deliver clean, efficient, and user-friendly code. My journey into web development started with a simple curiosity, but it quickly turned into a passion for creating intuitive and engaging user experiences.
+                     </p>
+ 
+                     <p class="mb-6">
+                         My goal is to continue learning and evolving as a developer, with a particular interest in mastering advanced JavaScript frameworks and enhancing my UI/UX design skills. I’m excited about the future of web development and am always eager to take on new challenges.
+                     </p>
+ 
+                     <p class="pr-6">
+                         So, Let’s connect and create something amazing together!
+                     </p>
+                 </div>
+             </div>
+ 
+            </div>
+
+
+            <div class=" text-center">
+                <button class="inline-block py-4 px-12 hover:bg-[#03becc] bg-[#0ef] shadow-md text-[#1f242d] transition duration-300 font-bold tracking-widest shadow-[#0ef] rounded-xl animate-[slideBottom_.7s_ease-in-out_forwards]">
+                    <a class="capitalize text-lg" href="#">contact me</a>
+                </button>
+            </div>
+         </section>
     </main>
 
     <!-- typed js cdn -->
