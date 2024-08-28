@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/portfolio logo.png" type="image/x-icon">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,10 +106,13 @@
                 slideRight: 'slideRight 1s ease-in-out',
                 'zoomIn-float': 'zoomIn 1s ease-in-out forwards, float 4s ease-in-out infinite',
                 slideInLeft: 'slideInLeft 1s ease-out forwards',
+                spread: 'spread 1s ease-out forward',
             },
-            }
+            },
+
           }
         }
+      
       </script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -130,7 +134,7 @@
                 </li>
 
                 <li>
-                    <a class="text-white text-[1.1rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#">projects</a>
+                    <a class="text-white text-[1.1rem] mr-8 cursor-pointer capitalize hover:text-[#0ef]" href="#projects">projects</a>
                 </li>
 
                 <li>
@@ -256,8 +260,8 @@
                 <!-- skill-cards-container -->
                  <div class="md:grid grid-cols-3 gap-8">
                     <!-- col-1 -->
-                    <div class="p-4 border-2 border-[#0ef] rounded-md relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#dc2626] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group opacity-0 animate-[wiggle_1s_ease-in-out_forwards]">
-                        <i class="fa-brands fa-html5 text-7xl text-red-600 group-hover:text-white mb-3 relative z-10"></i>
+                    <div class="p-4 border-2 border-[#0ef] rounded-md  relative overflow-hidden px-6 py-3 font-semibold text-white bg-transparent hover:bg-transparent border border-[#0ef] rounded-md transition-colors duration-300 ease-in-out before:absolute before:left-0 before:bottom-0 before:w-full hover:text-white before:h-full before:bg-[#e34c26] before:transition-transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 group opacity-0 animate-[wiggle_1s_ease-in-out_forwards]">
+                        <i class="fa-brands fa-html5 text-7xl text-[#e34c26] group-hover:text-white mb-3 relative z-10"></i>
                         <h3 class="text-2xl font-bold uppercase mb-3 relative z-10">html5</h3>
                         <p class="text-[1.1rem] relative z-10">
                             Proficient in crafting semantic and well-structured HTML5 code to build accessible, user-friendly web pages. Experienced in creating layouts with a focus on clean, maintainable markup, adhering to best practices for web development
@@ -309,8 +313,20 @@
                         </p>
                     </div>
                  </div>
+ 
             </div>
           </section>
+
+          <!-- my projects -->
+           <section id="projects" class="mb-[16rem]">
+                <div class="px-[10%]">
+                    <div class="mb-6">
+                        <h4 class="text-center h-[50px] text-3xl capitalize font-semibold  text-[#0ef] hover:border-b-2 pb-2 hover:border-[#0ef] w-[300px] mx-auto">
+                            my projects
+                        </h4>
+                     </div>
+                </div>
+           </section>
 
     </main>
 
